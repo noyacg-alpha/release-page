@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即刻下載 NoyAcg！</title>
+    <meta name="description" content="NoyAcg 官方下載頁面">
+    <link rel="shortcut icon" href="favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Story+Script&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .story-script {
+            font-family: 'Story Script', cursive;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'cute-green': {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'pop-in': 'popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards', // Bouncy effect
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                        popIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.8)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cute-green-50 text-gray-800 relative overflow-x-hidden min-h-screen flex flex-col">
+
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-cute-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div class="absolute top-0 right-1/4 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center z-10 opacity-0 animate-fade-in-up">
+        <a href="https://noy.asia">
+            <div class="flex items-center space-x-2 cursor-pointer hover:scale-105 transition-transform duration-300">
+                <span class="font-bold text-[2rem] tracking-tight text-gray-700 story-script">NoyAcg</span>
+            </div>
+        </a>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-center gap-12 z-10 py-10">
+        
+        <div class="flex-1 text-center lg:text-left space-y-6">
+            
+            <div class="opacity-0 animate-fade-in-up" style="animation-delay: 0.1s;">
+                <div class="inline-block px-4 py-1 bg-white rounded-full shadow-md text-sm font-semibold text-cute-green-600 mb-2 border border-cute-green-100 transform hover:scale-105 transition cursor-default">
+                    ✨ Android v3.2 已推出!
+                </div>
+            </div>
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight text-gray-900 opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+                睇漫畫, 睇番劇?<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cute-green-500 to-teal-400 mt-1">
+                    隨時隨地！
+                </span>
+            </h1>
+
+            <p class="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 opacity-0 animate-fade-in-up" style="animation-delay: 0.3s;">
+                NoyAcg 係你嘅專屬漫畫閱讀夥伴，提供海量免費漫畫同輕鬆追番劇嘅體驗。即刻下載，開啟你嘅漫畫冒險之旅！
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 opacity-0 animate-fade-in-up" style="animation-delay: 0.5s;">
+                
+                <!-- <button onclick="openModal('iOS')" class="w-full sm:w-auto bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-xl hover:shadow-2xl px-6 py-4 rounded-2xl flex items-center justify-center space-x-3 group active:scale-95">
+                    <i class="fa-brands fa-apple text-3xl group-hover:animate-wiggle"></i>
+                    <div class="text-left min-w-24">
+                        <div class="text-xs text-gray-300 font-medium">
+                            Download on the
+                        </div>
+                        <div class="text-lg font-bold leading-none">Apple IPA</div>
+                    </div>
+                </button> -->
+
+                <button class="w-full sm:w-auto opacity-65 bg-gray-900 text-white shadow-xl px-6 py-4 rounded-2xl flex items-center justify-center space-x-3 group" disabled>
+                    <i class="fa-brands fa-apple text-3xl group-hover:animate-wiggle"></i>
+                    <div class="text-left sm:min-w-32">
+                        <div class="text-xs text-gray-300 font-medium">
+                            iOS & iPadOS
+                        </div>
+                        <div class="text-lg font-bold leading-none">即將釋出</div>
+                    </div>
+                </button>
+
+                <button onclick="openModal('Android')" class="w-full sm:w-auto bg-cute-green-500 text-white hover:bg-cute-green-400 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-xl hover:shadow-green-200/50 px-6 py-4 rounded-2xl flex items-center justify-center space-x-3 group active:scale-95">
+                    <i class="fa-brands fa-android text-2xl group-hover:animate-wiggle"></i>
+                    <div class="text-left sm:min-w-32">
+                        <div class="text-xs text-green-100 font-medium">Get it on</div>
+                        <div class="text-lg font-bold leading-none">Android APK</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="pt-2 opacity-0 animate-fade-in-up flex flex-row gap-12" style="animation-delay: 0.6s;">
+                <a href="https://noymanga.com" class="inline-flex items-center text-gray-500 font-semibold hover:text-cute-green-600 transition group">
+                    <i class="fa-solid fa-globe mr-2 group-hover:rotate-180 transition duration-500"></i> 使用網頁版繼續
+                </a>
+
+                <a href="https://noy.asia" class="inline-flex items-center text-gray-500 font-semibold hover:text-cute-green-600 transition group">
+                    <i class="fa-solid fa-sun mr-2 group-hover:rotate-180 transition duration-500"></i> 回到官方網站
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full max-w-md relative opacity-0 animate-fade-in-up" style="animation-delay: 0.4s;">
+            
+            <div class="bg-white p-4 rounded-[3rem] shadow-2xl border-4 border-white transform rotate-3 hover:rotate-1 transition duration-500 relative z-10 animate-float">
+                <div class="bg-cute-green-100 rounded-[2.5rem] max-h-96 w-full flex flex-col items-center justify-center overflow-hidden relative group cursor-pointer">
+                    <img src="/nry.webp" alt="Mascot" class="object-cover w-full h-full opacity-80 group-hover:scale-110 transition duration-700 ease-in-out">
+                    
+                    <!-- <div class="absolute top-4 right-4 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-md animate-bounce">
+                        New Series! 🌟
+                    </div> -->
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <h3 class="font-bold text-lg text-gray-800 group-hover:text-cute-green-600 transition">遇見諾莉亞</h3>
+                    <p class="text-gray-500 text-sm">
+                        跟住諾莉亞一齊展開奇幻冒險！
+                    </p>
+                </div>
+            </div>
+            
+            <div class="absolute top-10 -right-6 w-20 h-20 text-cute-green-400 text-6xl opacity-20 animate-pulse">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+             <div class="absolute -bottom-6 -left-6 w-20 h-20 text-yellow-400 text-6xl opacity-30 animate-spin-slow" style="animation-duration: 10s;">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-6 text-center text-gray-400 text-sm z-10 opacity-0 animate-fade-in-up" style="animation-delay: 0.8s;">
+        &copy; 2026 NoyNetwork Ltd. Made with <i class="fa-solid fa-heart text-red-400 animate-pulse"></i> from <i class="fa-solid fa-earth-americas text-blue-400 animate-spin-slow"></i>.
+    </footer>
+
+    <div id="updateModal" class="fixed inset-0 z-50 hidden transition-all duration-300">
+        <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm transition-opacity opacity-0" id="modalBackdrop" onclick="closeModal()"></div>
+        
+        <div class="relative min-h-screen sm:min-h-0 sm:h-auto flex items-center justify-center p-4">
+            <div id="modalContent" class="bg-white w-full max-w-md rounded-3xl shadow-2xl overflow-hidden transform scale-90 opacity-0 transition-all duration-300 p-0">
+                
+                <div class="bg-cute-green-500 p-6 text-white text-center relative overflow-hidden group">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-white opacity-10 rounded-full group-hover:scale-110 transition duration-700"></div>
+                    <div class="absolute top-10 -right-10 w-24 h-24 bg-white opacity-10 rounded-full group-hover:scale-110 transition duration-700 delay-100"></div>
+                    
+                    <h2 class="text-2xl font-bold relative z-10">What's New? 🎉</h2>
+                    <p class="text-green-100 text-sm mt-1 relative z-10">Version 3.2.0</p>
+                    
+                    <button onclick="closeModal()" class="absolute top-4 right-4 text-white/80 hover:text-white hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition hover:rotate-90 duration-300 z-20">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="p-6 max-h-[60vh] overflow-y-auto custom-scrollbar">
+                    <ul class="space-y-4">
+                        <li class="flex items-start group">
+                            <div class="w-8 text-center bg-pink-100 text-pink-600 rounded-lg p-2 mr-3 mt-1 text-xs group-hover:scale-110 transition">
+                                <i class="fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">New Features</h4>
+                                <div class="text-sm text-gray-500">
+                                    <p>1. ABCDABCD</p>
+                                    <p>2. ABCDABCDCBDCBD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex items-start group">
+                            <div class="w-8 text-center bg-blue-100 text-blue-600 rounded-lg p-2 mr-3 mt-1 text-xs group-hover:scale-110 transition">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Fixed</h4>
+                                <div class="text-sm text-gray-500">
+                                    <p>1. ABCDABCD</p>
+                                    <p>2. ABCDABCDCBDCBD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex items-start group">
+                            <div class="w-8 text-center bg-yellow-100 text-yellow-600 rounded-lg p-2 mr-3 mt-1 text-xs group-hover:scale-110 transition">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Optimizations</h4>
+                                <div class="text-sm text-gray-500">
+                                    <p>1. ABCDABCD</p>
+                                    <p>2. ABCDABCDCBDCBD</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 border-t border-gray-100 text-center">
+                    <p id="platform-text" class="text-xs text-gray-500 mb-3">Ready to update your app?</p>
+                    <a href="#" id="confirm-download-btn" class="block w-full bg-gray-900 text-white font-bold py-3 rounded-xl shadow-lg hover:bg-gray-800 hover:shadow-xl transition transform active:scale-95 group">
+                        即刻下載 <i class="fa-solid fa-cloud-arrow-down ml-2 group-hover:animate-bounce"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('updateModal');
+        const modalBackdrop = document.getElementById('modalBackdrop');
+        const modalContent = document.getElementById('modalContent');
+        const confirmBtn = document.getElementById('confirm-download-btn');
+        const platformText = document.getElementById('platform-text');
+
+        function openModal(platform) {
+            // Customize Link
+            let downloadLink = '#';
+            if (platform === 'iOS') {
+                downloadLink = 'https://apps.apple.com/app-placeholder'; 
+                platformText.innerText = `Downloading for iOS iPA (Latest Version)`;
+            } else {
+                downloadLink = 'https://play.google.com/store/apps/details?id=placeholder'; 
+                platformText.innerText = `Downloading for Android APK (Latest Version)`;
+            }
+            confirmBtn.href = downloadLink;
+            
+            // Show Modal Wrapper
+            modal.classList.remove('hidden');
+            
+            // Trigger Animation (small delay allows the display:block to register)
+            setTimeout(() => {
+                modalBackdrop.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-90', 'opacity-0');
+                modalContent.classList.add('animate-pop-in'); // Add the pop animation
+            }, 10);
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            // Reverse Animation
+            modalBackdrop.classList.add('opacity-0');
+            modalContent.classList.remove('animate-pop-in'); // Remove pop class to allow scale reset
+            modalContent.classList.add('scale-90', 'opacity-0');
+
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
